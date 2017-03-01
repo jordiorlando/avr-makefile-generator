@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="avr,makefile,generator,gnu,gcc,libc">
+  <meta name="description" content="">
+  <meta name="author" content="0xdec">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>AVR Makefile Generator</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <style>
+    body {
+      padding-top: 4.5rem;
+      padding-bottom: 1rem;
+    }
+    .code {
+      max-height: 34rem;
+      overflow-y: scroll;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: 0.25rem;
+    }
+    .option {
+      min-width: 1rem;
+      padding: 0.1rem 0.2rem;
+      border-radius: 0.2rem;
+      border: 1px solid rgba(0,0,0,.125);
+      background-color: rgba(0,0,0,.025);
+    }
+    .footer {
+      padding-top: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="https://github.com/0xdec/avr-makefile-generator">AVR Makefile Generator</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse"></div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <form class="form-inline" id="options"></form>
+          </div>
+          <div class="card-block">
+            <pre class="code"><code id="makefile"></code></pre>
+          </div>
+          <div class="card-footer text-muted">
+            <button class="btn btn-primary" id="button-save">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="about">
+      <div class="col footer">
+        No responsibility is taken for the correctness of this webpage. Use at your own risk.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Lodash -->
+  <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <script src="bower_components/file-saver/FileSaver.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
