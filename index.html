@@ -18,7 +18,8 @@
       padding-bottom: 1rem;
     }
     .code {
-      max-height: 34rem;
+      max-height: 36rem;
+      margin: 0;
       padding: 0.5rem;
       overflow-y: scroll;
       border: 1px solid rgba(0,0,0,.125);
@@ -43,8 +44,14 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="https://github.com/0xdec/avr-makefile-generator">AVR Makefile Generator</a>
-    <div class="collapse navbar-collapse" id="navbarCollapse"></div>
+    <a class="navbar-brand" href="#">AVR Makefile Generator</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/0xdec/avr-makefile-generator">View on GitHub</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <div class="container">
@@ -65,7 +72,9 @@
     </div>
     <div class="row" id="about">
       <div class="col footer">
-        No responsibility is taken for the correctness of this webpage. Use at your own risk.
+        <span>This generator is meant to help create a boilerplate AVR-GCC Makefile. It is inspired heavily by <a href="http://www.sax.de/~joerg/mfile">Mfile</a> and the WinAVR project.</span>
+        <br>
+        <span>No responsibility is taken for the correctness of this webpage. Use at your own risk.</span>
       </div>
     </div>
   </div>
