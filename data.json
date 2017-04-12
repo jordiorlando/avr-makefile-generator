@@ -218,7 +218,7 @@
       ["avr911", "Atmel AppNote AVR911 AVROSP"],
       ["avrftdi", "FT2232D based generic programmer"],
       ["avrisp", "Atmel AVR ISP"],
-      ["avrisp2", "Atmel AVR ISP mkII"],
+      ["avrisp2", "Atmel AVR ISP mkII (alias)"],
       ["avrispmkII", "Atmel AVR ISP mkII"],
       ["avrispv2", "Atmel AVR ISP V2"],
       ["bascom", "Bascom SAMPLE programming cable"],
